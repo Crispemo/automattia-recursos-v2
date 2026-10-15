@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca de recursos · Automattia</title>
+<meta name="description" content="Vídeos, sistemas y guías para vender más con email, CRO, Meta Ads y Claude en tu tienda online.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  /* ===== CONFIGURACIÓN ===== */
+  window.AUTOMATTIA = {
+    WHATSAPP: "34643135603",
+    CALENDLY_URL: "",                          // Si lo rellenas, el botón de llamada va a Calendly
+    BIBLIOTECA_URL: "",                        // Notion/Drive con plantillas, skills y calculadoras. Vacío = se piden por WhatsApp
+    YOUTUBE_URL: "https://www.youtube.com/@cristinaperisai"
+  };
+</script>
+<style>
+:root{
+  --bg:#f6f1ea; --bg-2:#efe8de; --panel:#ffffff; --panel-2:#fbf8f3;
+  --line:#e7dfd3; --line-2:#d8ccbb;
+  --ink:#171411; --ink-2:#5d554c; --ink-3:#8e8477;
+  --acc:#f0532c; --acc-2:#d2401c; --acc-soft:rgba(240,83,44,.09);
+  --dark:#171411; --gold:#f2b53c; --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:Poppins,Inter,sans-serif}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.label{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.btn{background:var(--acc);color:#fff;border:none;border-radius:10px;padding:12px 20px;font:inherit;font-weight:600;font-size:15px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .2s}
+.btn:hover{background:var(--acc-2)}
+.btn.line{background:transparent;border:1px solid var(--line-2);color:var(--ink)}
+.btn.line:hover{border-color:var(--ink)}
+
+header{position:sticky;top:0;z-index:20;background:rgba(246,241,234,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Poppins;font-weight:600;font-size:17px;color:var(--acc-2)}
+.logo i{width:28px;height:28px;border-radius:8px;background:var(--acc);color:#fff;display:grid;place-items:center;font-style:normal;font-size:14px;font-weight:700}
+nav.top{display:flex;gap:22px;font-size:14px;color:var(--ink-2)}
+nav.top a:hover{color:var(--ink)}
+@media (max-width:820px){nav.top{display:none}}
+.hdr-cta{font-size:13px;font-weight:600;background:var(--dark);color:#fff;padding:9px 14px;border-radius:10px}
+
+/* Hero */
+.hero{padding:64px 0 48px;text-align:center}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line-2);background:var(--acc-soft);color:var(--acc-2);border-radius:999px;padding:6px 14px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.hello{color:var(--ink-2);font-size:15px;margin-top:16px;min-height:1em}
+.hero h1{font-size:clamp(34px,5.2vw,60px);line-height:1.05;letter-spacing:-.025em;font-weight:700;margin:14px auto 18px;max-width:900px}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero .sub{color:var(--ink-2);font-size:17px;max-width:620px;margin:0 auto 28px}
+.hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:44px auto 0;max-width:820px;border:1px solid var(--line);border-radius:var(--r);background:var(--panel)}
+.facts div{padding:18px 12px;text-align:center;border-left:1px solid var(--line)}
+.facts div:first-child{border-left:none}
+.facts b{display:block;font-family:Poppins;font-size:24px;letter-spacing:-.01em}
+.facts span{font-size:11px;font-weight:600;letter-spacing:.12em;color:var(--ink-3);text-transform:uppercase}
+@media (max-width:640px){.facts{grid-template-columns:repeat(2,1fr)}.facts div:nth-child(3){border-left:none}.facts div:nth-child(n+3){border-top:1px solid var(--line)}}
+.topics{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:28px}
+.topics span{font-size:13px;border:1px solid var(--line-2);border-radius:999px;padding:5px 12px;color:var(--ink-2);background:var(--panel-2)}
+
+section.block{border-top:1px solid var(--line);padding:72px 0}
+.shead{max-width:660px;margin-bottom:34px}
+.shead.c{text-align:center;margin-left:auto;margin-right:auto}
+.shead h2{font-size:clamp(28px,3.6vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.12;margin-top:10px}
+.shead h2 em{font-style:normal;color:var(--acc)}
+.shead p{color:var(--ink-2);margin-top:12px}
+
+/* Vídeos destacados */
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:760px){.feat{grid-template-columns:1fr}}
+.player{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.frame{position:relative;aspect-ratio:16/9;background:var(--dark);cursor:pointer}
+.frame img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font-size:22px;box-shadow:0 10px 30px -8px rgba(0,0,0,.5)}
+.player .meta{padding:16px 18px}
+.player .num{font-size:11px;font-weight:600;letter-spacing:.14em;color:var(--acc-2)}
+.player h3{font-size:16px;font-weight:600;line-height:1.35;margin-top:4px}
+
+/* Biblioteca */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.filters button{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line-2);background:var(--panel);color:var(--ink-2);border-radius:999px;padding:8px 16px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--dark);color:#fff;border-color:var(--dark)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s}
+.card:hover{border-color:var(--line-2)}
+.card .th{aspect-ratio:16/9;background:var(--bg-2);position:relative}
+.card .th img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tag{align-self:flex-start;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--acc-soft);color:var(--acc-2)}
+.card h3{font-size:15px;font-weight:600;line-height:1.35}
+.card .go{margin-top:auto;font-size:13px;font-weight:600;color:var(--ink-2)}
+.card:hover .go{color:var(--acc-2)}
+
+/* Bloques extra */
+.kit{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:34px}
+@media (max-width:820px){.kit{grid-template-columns:1fr}}
+.kit h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;line-height:1.15;margin:8px 0 10px}
+.kit p{color:var(--ink-2)}
+.kit ul{list-style:none;display:grid;gap:8px;margin-top:16px;font-size:15px}
+.kit li::before{content:"✓";color:var(--acc);font-weight:700;margin-right:10px}
+.kit .side{background:var(--bg);border:1px dashed var(--line-2);border-radius:14px;padding:22px;text-align:center}
+.kit .side small{display:block;color:var(--ink-3);font-size:12px;margin-top:10px}
+
+.rca{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:820px){.rca{grid-template-columns:1fr}}
+.rca div{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.rca b{font-family:Poppins;font-size:42px;line-height:1;color:var(--acc);display:block;margin-bottom:12px}
+.rca h3{font-size:18px;font-weight:600;margin-bottom:6px}
+.rca p{color:var(--ink-2);font-size:14.5px}
+
+.final{background:var(--dark);color:#fff;text-align:center;padding:84px 0}
+.final h2{font-size:clamp(28px,4.2vw,46px);font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:14px}
+.final h2 em{font-style:normal;color:var(--acc)}
+.final p{color:#cfc6ba;max-width:560px;margin:0 auto 28px}
+.final .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.final .btn.line{color:#fff;border-color:#4a433b}
+
+footer{border-top:1px solid var(--line);padding:30px 0 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer p,footer a{color:var(--ink-3);font-size:13px}
+footer nav{display:flex;gap:18px}
+
+.wa{position:fixed;right:16px;bottom:16px;z-index:30;background:#1f9d55;color:#fff;font-weight:600;font-size:14px;padding:12px 16px;border-radius:999px;box-shadow:0 10px 30px -10px rgba(0,0,0,.45);display:flex;gap:8px;align-items:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" class="logo"><i>A</i>Automattia</a>
+    <nav class="top"><a href="#empieza">Empieza aquí</a><a href="#biblioteca">Biblioteca</a><a href="#kit">Plantillas</a><a href="#rca">Trabaja conmigo</a></nav>
+    <a href="#" class="hdr-cta js-wa">Hablemos</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="pill">✦ Acceso inmediato · 100% gratis</span>
+      <p class="hello" id="hello"></p>
+      <h1>Todo lo que uso para que las tiendas vendan más <em>sin depender de los anuncios</em>.</h1>
+      <p class="sub">Email marketing con Klaviyo, CRO en Shopify, Meta Ads y Claude. Vídeos paso a paso, ordenados por lo que te está frenando ahora mismo.</p>
+      <div class="ctas">
+        <a href="#empieza" class="btn">▶ Ver los recursos</a>
+        <a href="#" class="btn line js-wa">Que me digas por dónde empezar</a>
+      </div>
+      <div class="facts">
+        <div><b id="fVideos">29</b><span>Vídeos</span></div>
+        <div><b>3</b><span>Pilares RCA</span></div>
+        <div><b>+1h</b><span>Curso Claude + Ads</span></div>
+        <div><b>0 €</b><span>Para siempre</span></div>
+      </div>
+      <div class="topics"><span>Klaviyo</span><span>Flows</span><span>Recompra</span><span>Segmentación</span><span>Pop-ups</span><span>SMS y WhatsApp</span><span>CRO Shopify</span><span>Meta Ads</span><span>Claude</span><span>Black Friday</span></div>
+    </div>
+  </section>
+
+  <section class="block" id="empieza">
+    <div class="wrap">
+      <div class="shead">
+        <span class="label">Mira esto primero</span>
+        <h2>Empieza <em>por aquí</em></h2>
+        <p>Cuatro vídeos para entender el método completo: cómo hago que una tienda facture más con su propia lista, convierta mejor y gaste mejor en anuncios.</p>
+      </div>
+      <div class="feat" id="feat"></div>
+    </div>
+  </section>
+
+  <section class="block" id="biblioteca">
+    <div class="wrap">
+      <div class="shead">
+        <span class="label">Biblioteca de recursos</span>
+        <h2>Cada problema de tu tienda, <em>resuelto en un vídeo</em></h2>
+        <p>Elige el tema que te está frenando y mira exactamente cómo lo resuelvo con clientes reales.</p>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="kit">
+    <div class="wrap">
+      <div class="kit">
+        <div>
+          <span class="label">Plantillas, skills y calculadoras</span>
+          <h2>Lo que uso en mis cuentas, listo para copiar</h2>
+          <p>Además de los vídeos, tienes el material de trabajo que uso con mis clientes.</p>
+          <ul>
+            <li>Mapa de flows y checklist de Klaviyo</li>
+            <li>Skills y prompts de Claude para auditar y escribir emails</li>
+            <li>Calculadora LTV/CAC e ingresos por email</li>
+            <li>Automatizaciones n8n listas para importar</li>
+          </ul>
+        </div>
+        <div class="side">
+          <a href="#" class="btn" id="kitBtn">Abrir la biblioteca ↗</a>
+          <small id="kitNote">Se abre en una pestaña nueva</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="rca">
+    <div class="wrap">
+      <div class="shead">
+        <span class="label">Si prefieres que lo haga yo</span>
+        <h2>El sistema <em>RCA</em> para tu tienda</h2>
+        <p>Lo que ves en los vídeos es lo que implemento con mis clientes, en tres frentes a la vez.</p>
+      </div>
+      <div class="rca">
+        <div><b>R</b><h3>Retención</h3><p>Email marketing y flows en Klaviyo para que tus clientes vuelvan a comprar.</p></div>
+        <div><b>C</b><h3>Conversión</h3><p>CRO en Shopify para que el mismo tráfico te deje más ventas.</p></div>
+        <div><b>A</b><h3>Anuncios</h3><p>Meta Ads con creatividades y presupuesto que tienen sentido para tu margen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>¿Lo vemos <em>en tu tienda</em>?</h2>
+      <p>Cuéntame en qué punto estás y te digo qué haría primero. Sin compromiso.</p>
+      <div class="ctas">
+        <a href="#" class="btn js-call">Reservar una llamada</a>
+        <a href="#" class="btn line js-wa">Escribirme por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><a href="/" class="logo"><i>A</i>Automattia</a><p style="margin-top:6px">Email marketing, CRO y automatizaciones para tiendas online.</p></div>
+    <nav><a href="/">Recursos gratis</a><a href="#" id="ytLink" target="_blank" rel="noopener">YouTube</a><a href="#" class="js-wa">WhatsApp</a></nav>
+    <p>© 2026 Automattia</p>
+  </div>
+</footer>
+
+<a href="#" class="wa js-wa" aria-label="Escribir por WhatsApp">💬 Hablemos</a>
+
+<script>
+(function(){
+  const C=window.AUTOMATTIA;
+  const V=[
+    // [id, título, categoría, destacado]
+    ["jEIrTafkz5w","Cómo aumento el AOV y LTV de mis clientes sin gastar más en Ads (el Método RCA)","ret",1],
+    ["-kYzBx5Yihw","Email Marketing: todo lo que necesitas saber para escalar tu ecommerce en 2026","ret",2],
+    ["DNRkNUI_Veg","Shopify CRO: la auditoría que le haría a tu tienda (caso real)","cro",3],
+    ["iEmJlc770Qk","Guía completa Claude + Meta Ads 2026 para ecommerce | Curso 1h","ia",4],
+    ["YFWXaBesK58","Klaviyo: audito una tienda real en directo (y esto es lo que falla)","ret"],
+    ["DXX-hq9kMUQ","Klaviyo: el sistema para que tus clientes vuelvan a comprar","ret"],
+    ["F-17h8PdVIw","El sistema para que tus clientes vuelvan a comprar cada mes (copia y pega)","ret"],
+    ["RbSXCjhT45k","El 80% de tus flows de Klaviyo no están vendiendo nada (cómo saberlo)","ret"],
+    ["3s0UFcYenms","Por qué tus clientes no vuelven a comprar","ret"],
+    ["zZB2Up5utvs","Tus segmentos de Klaviyo están mal montados (y por eso no vendes más)","ret"],
+    ["lf3e_HpGDJo","Cómo crear un flujo de bienvenida de alta conversión (Klaviyo)","ret"],
+    ["0M7_Joh4S_c","El mejor flow de carrito abandonado para tu Shopify (Klaviyo setup)","ret"],
+    ["HjxLvPxaZLI","El mejor flujo post-compra para tu Shopify (Klaviyo setup)","ret"],
+    ["bXx6MJ1lemo","Cómo crear un pop-up con alta tasa de conversión en 2026 (Klaviyo setup)","ret"],
+    ["e7vXzl1QIJg","Klaviyo + WhatsApp: vende sin gastar más en Ads","ret"],
+    ["8DW2GFioz5I","Cómo implementar SMS marketing en tu tienda Shopify para que sea rentable","ret"],
+    ["oXQnach2Keg","Estrategia completa de email marketing para Black Friday y Cyber Monday 2026","ret"],
+    ["0c72G5V1xPM","Ecommerce email marketing 2026: curso Klaviyo + Shopify","ret"],
+    ["eeln7u-s-Bw","Por qué tu tienda Shopify no convierte (aunque tus anuncios funcionen)","cro"],
+    ["zuOjaXPrzLk","Cómo mejorar la tasa de conversión de tu tienda online","cro"],
+    ["_5MwhquAGik","Cómo aprovechar los datos de tu Shopify para mejorar el CRO","cro"],
+    ["89HXFVdTu4g","Suscripciones en Shopify: la oferta que reduce cancelaciones (no es el precio)","cro"],
+    ["bRbCArbdyyY","Así crearía la tienda online de PLESH (Ibai Llanos y Gerard Piqué)","cro"],
+    ["pDhFQBVrNjg","Subir presupuesto en Meta Ads no hará crecer tu tienda (haz esto antes)","ads"],
+    ["64cC8IbzcFw","Claude + Pletor: el sistema para creatividades ilimitadas en Meta Ads","ads"],
+    ["5HFXga0kcBk","Claude + Klaviyo: copy, calendario y diseño de email en automático","ia"],
+    ["nRAUbNhC8Q4","Claude genera emails personalizados x3 más rápido | Klaviyo setup","ia"],
+    ["M0YQPLLIi1Q","Cómo automatizar todo Shopify con Claude","ia"],
+    ["I0v6qkSGF3c","Cómo construí una tienda Shopify desde 0 con Claude para una marca de fragancias","ia"]
+  ];
+  const CAT={ret:"Retención · Email",cro:"Conversión · CRO",ads:"Anuncios · Meta",ia:"IA · Claude"};
+  const thumb=id=>`https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  const yt=id=>`https://www.youtube.com/watch?v=${id}`;
+  const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+  // Saludo personalizado si viene del formulario
+  try{const n=sessionStorage.getItem('am_nombre');if(n)document.getElementById('hello').textContent='Hola, '+n+'. Ya tienes acceso a todo 👇'}catch(e){}
+  document.getElementById('fVideos').textContent=V.length;
+
+  // WhatsApp / llamada
+  const wa='https://wa.me/'+C.WHATSAPP+'?text='+encodeURIComponent('Hola Cris, vengo de la biblioteca de recursos de Automattia y me gustaría contarte sobre mi tienda.');
+  document.querySelectorAll('.js-wa').forEach(a=>{a.href=wa;a.target='_blank';a.rel='noopener'});
+  document.querySelectorAll('.js-call').forEach(a=>{a.href=C.CALENDLY_URL||wa;a.target='_blank';a.rel='noopener'});
+  document.getElementById('ytLink').href=C.YOUTUBE_URL;
+
+  // Kit
+  const kb=document.getElementById('kitBtn');
+  if(C.BIBLIOTECA_URL){kb.href=C.BIBLIOTECA_URL;kb.target='_blank';kb.rel='noopener'}
+  else{kb.href='https://wa.me/'+C.WHATSAPP+'?text='+encodeURIComponent('Hola Cris, quiero las plantillas, skills y calculadoras de la biblioteca de Automattia.');kb.target='_blank';kb.rel='noopener';kb.textContent='Pedir las plantillas';document.getElementById('kitNote').textContent='Te las envío por WhatsApp'}
+
+  // Destacados (se cargan al hacer clic, sin vídeos pesados de inicio)
+  const feat=V.filter(v=>v[3]).sort((a,b)=>a[3]-b[3]);
+  document.getElementById('feat').innerHTML=feat.map((v,i)=>`<div class="player"><div class="frame" data-id="${v[0]}" role="button" tabindex="0" aria-label="Reproducir: ${esc(v[1])}"><img src="${thumb(v[0])}" alt="" loading="lazy"><span class="play">▶</span></div><div class="meta"><span class="num">0${i+1} · ${CAT[v[2]]}</span><h3>${esc(v[1])}</h3></div></div>`).join('');
+  document.querySelectorAll('.frame').forEach(f=>{const go=()=>{f.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.id}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Vídeo"></iframe>`};f.addEventListener('click',go);f.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})});
+
+  // Biblioteca con filtros
+  const fil=document.getElementById('filters'), grid=document.getElementById('grid');
+  const cats=[['all','Todos'],...Object.entries(CAT)];
+  fil.innerHTML=cats.map(([k,l])=>{const n=k==='all'?V.length:V.filter(v=>v[2]===k).length;return `<button type="button" data-k="${k}" aria-pressed="${k==='all'}">${l} (${n})</button>`}).join('');
+  function render(k){grid.innerHTML=V.filter(v=>k==='all'||v[2]===k).map(v=>`<a class="card" href="${yt(v[0])}" target="_blank" rel="noopener"><div class="th"><img src="${thumb(v[0])}" alt="" loading="lazy"></div><div class="body"><span class="tag">${CAT[v[2]]}</span><h3>${esc(v[1])}</h3><span class="go">▶ Ver en YouTube →</span></div></a>`).join('')}
+  fil.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;fil.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));render(b.dataset.k)});
+  render('all');
+})();
+</script>
+</body>
+</html>
